@@ -29,9 +29,9 @@ public class Handler {
 
     void retriveFont() {
         try {
-            pixelPlus = Font.createFont(Font.TRUETYPE_FONT, new File("C:\\Users\\admin\\IdeaProjects\\2DPlateform\\src\\Fonts\\04B_30__.TTF")).deriveFont(55f);
+            pixelPlus = Font.createFont(Font.TRUETYPE_FONT, new File("Fonts/04B_30__.TTF")).deriveFont(55f);
             GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-            ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("C:\\Users\\admin\\IdeaProjects\\2DPlateform\\src\\Fonts\\04B_30__.TTF")));
+            ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("Fonts/04B_30__.TTF")));
         } catch (IOException | FontFormatException e) {
             System.out.println(e.getMessage());
         }

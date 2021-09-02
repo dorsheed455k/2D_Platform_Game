@@ -11,10 +11,10 @@ public class Audio {
     private float volume;
 
     public Audio() {
-        music = new File("C:\\Users\\admin\\IdeaProjects\\2DPlateform\\src\\Sound\\POL-star-way-short.wav");
-        jumping = new File("C:\\Users\\admin\\IdeaProjects\\2DPlateform\\src\\Sound\\jump_11.wav");
-        fire = new File("C:\\Users\\admin\\IdeaProjects\\2DPlateform\\src\\Sound\\FireIgnite.wav");
-        coin = new File("C:\\Users\\admin\\IdeaProjects\\2DPlateform\\src\\Sound\\classiccoin.wav");
+        music = new File("Sound/POL-star-way-short.wav");
+        jumping = new File("Sound/jump_11.wav");
+        fire = new File("Sound/FireIgnite.wav");
+        coin = new File("Sound/classiccoin.wav");
         volume = -10.0f;
     }
 

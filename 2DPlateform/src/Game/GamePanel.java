@@ -27,9 +27,9 @@ public class GamePanel extends JPanel implements Runnable {
     private ArrayList<Handler> handlers;
     private boolean pauseGame = false;
     private String[] maps = {
-            "C:\\Users\\admin\\IdeaProjects\\2DPlateform\\src\\Maps\\map1.txt",
-            "C:\\Users\\admin\\IdeaProjects\\2DPlateform\\src\\Maps\\map3.txt",
-            "C:\\Users\\admin\\IdeaProjects\\2DPlateform\\src\\Maps\\map2.txt",
+            "Maps/map1.txt",
+            "Maps/map3.txt",
+            "Maps/map2.txt",
     };
 
     private Menu menu;
@@ -61,7 +61,7 @@ public class GamePanel extends JPanel implements Runnable {
         requestFocus();
         TITLE = "2D Platform Game";
         try {
-            frame.setIconImage(ImageIO.read(new File("C:\\Users\\admin\\IdeaProjects\\2DPlateform\\src\\Img\\Icon.PNG")));
+            frame.setIconImage(ImageIO.read(new File("Img/Icon.PNG")));
         } catch(IOException e){
             e.printStackTrace();
         }
@@ -150,9 +150,9 @@ public class GamePanel extends JPanel implements Runnable {
 
     void retriveFont() {
         try {
-            pixelPlus = Font.createFont(Font.TRUETYPE_FONT, new File("C:\\Users\\admin\\IdeaProjects\\2DPlateform\\src\\Fonts\\04B_30__.TTF")).deriveFont(55f);
+            pixelPlus = Font.createFont(Font.TRUETYPE_FONT, new File("Fonts/04B_30__.TTF")).deriveFont(55f);
             GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-            ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("C:\\Users\\admin\\IdeaProjects\\2DPlateform\\src\\Fonts\\04B_30__.TTF")));
+            ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("Fonts/04B_30__.TTF")));
         } catch (IOException | FontFormatException e) {
             System.out.println(e.getMessage());
         }

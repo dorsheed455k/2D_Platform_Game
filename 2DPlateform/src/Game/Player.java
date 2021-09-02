@@ -31,7 +31,7 @@ public class Player extends GameObject  {
         playerWidth = 96;
         maxDistX = terrain.getEx();
         sprite = new SpriteSheet();
-        img = sprite.trimImage(ImageIO.read(new File("C:\\Users\\admin\\IdeaProjects\\2DPlateform\\src\\Img\\player.png")));
+        img = sprite.trimImage(ImageIO.read(new File("Img/player.png")));
         falling = true;
         jumping = true;
     }

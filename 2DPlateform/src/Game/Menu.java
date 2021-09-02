@@ -23,7 +23,7 @@ public class Menu {
 
     public void setFont() {
         try {
-            pixel = Font.createFont(Font.TRUETYPE_FONT, new File("C:\\Users\\admin\\IdeaProjects\\2DPlateform\\src\\Fonts\\VCR_OSD_MONO_1.001.ttf")).deriveFont(50f);
+            pixel = Font.createFont(Font.TRUETYPE_FONT, new File("Fonts/VCR_OSD_MONO_1.001.ttf")).deriveFont(50f);
         }catch (Exception e) {
             e.printStackTrace();
         }

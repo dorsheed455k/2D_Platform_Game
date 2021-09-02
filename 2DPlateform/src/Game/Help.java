@@ -14,8 +14,8 @@ public class Help {
     private final int HEIGHT;
     private Rectangle backButton;
     private SpriteSheet spriteSheet;
-    private BufferedImage rightKey = ImageIO.read(new File("C:\\Users\\admin\\IdeaProjects\\2DPlateform\\src\\Img\\keyboard_key_right.png"));
-    private BufferedImage leftKey = ImageIO.read(new File("C:\\Users\\admin\\IdeaProjects\\2DPlateform\\src\\Img\\keyboard_key_left.png"));
+    private BufferedImage rightKey = ImageIO.read(new File("Img/keyboard_key_right.png"));
+    private BufferedImage leftKey = ImageIO.read(new File("Img/keyboard_key_left.png"));
     public Font pixel;
 
     public Help(int WIDTH, int HEIGHT) throws IOException {
@@ -29,7 +29,7 @@ public class Help {
 
     public void setFont() {
         try {
-            pixel = Font.createFont(Font.TRUETYPE_FONT, new File("C:\\Users\\admin\\IdeaProjects\\2DPlateform\\src\\Fonts\\VCR_OSD_MONO_1.001.ttf")).deriveFont(50f);
+            pixel = Font.createFont(Font.TRUETYPE_FONT, new File("Fonts/VCR_OSD_MONO_1.001.ttf")).deriveFont(50f);
         }catch (Exception e) {
             e.printStackTrace();
         }

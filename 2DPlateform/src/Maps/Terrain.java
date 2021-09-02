@@ -36,15 +36,15 @@ public class Terrain {
         this.width = WIDTH;
         this.height = HEIGHT;
         sprite = new SpriteSheet();
-        items = sprite.trimImage(ImageIO.read(new File("C:\\Users\\admin\\IdeaProjects\\2DPlateform\\src\\Img\\sprites.png")));
+        items = sprite.trimImage(ImageIO.read(new File("Img/sprites.png")));
         elements = new BufferedImage[]{
                 items.getSubimage(0,0,20,20),
                 items.getSubimage(20,0,20,20),
                 sprite.trimImage(items.getSubimage(40,0,12,20))
         };
-        grass = ImageIO.read(new File("C:\\Users\\admin\\IdeaProjects\\2DPlateform\\src\\Img\\grass.png"));
-        wood = ImageIO.read(new File("C:\\Users\\admin\\IdeaProjects\\2DPlateform\\src\\Img\\wood1.jpg"));
-        stone = ImageIO.read(new File("C:\\Users\\admin\\IdeaProjects\\2DPlateform\\src\\Img\\stone.png"));
+        grass = ImageIO.read(new File("Img/grass.png"));
+        wood = ImageIO.read(new File("Img/wood1.jpg"));
+        stone = ImageIO.read(new File("Img/stone.png"));
 
         value = 0;
         scale = 1;
